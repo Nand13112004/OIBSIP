@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('img/legion-abstract-8k-5p-7680x4320.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  background: #000000;
+  margin: 0;
+  font-size: 28px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+form {
+  width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background: #218838;
+}
+
+.tasks {
+  flex: 1;
+  min-width: 300px;
+}
+
+.tasks h2 {
+  margin-top: 0;
+  color: #fff;
+  font-weight: 500;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task {
+  background: white;
+  color: #333;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.task:hover {
+  transform: scale(1.02);
+}
+
+.task div:first-child {
+  max-width: 70%;
+}
+
+.task small {
+  display: block;
+  color: #777;
+  margin-top: 5px;
+}
+
+.task-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-buttons button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.task-buttons button:hover {
+  background: #c82333;
+}
+
+.task-buttons button:nth-child(1) {
+  background: #007bff;
+}
+
+.task-buttons button:nth-child(1):hover {
+  background: #0056b3;
+}
+
+.task-buttons button:nth-child(3) {
+  background: #17a2b8;
+}
+
+.task-buttons button:nth-child(3):hover {
+  background: #117a8b;
+}
